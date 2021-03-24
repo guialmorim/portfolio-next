@@ -16,7 +16,8 @@ const button = css`
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: ${(props) => hexa(props.theme.brand.primary, 0.1, true)};
+		background-color: ${(props) =>
+			hexa(props.theme.brand.primary, 0.1, 'true')};
 		outline: none;
 	}
 	&:after {
@@ -104,7 +105,7 @@ const mixins = {
 		&:focus,
 		&:active {
 			background-color: ${(props) =>
-				hexa(props.theme.brand.primary, 0.1, true)};
+				hexa(props.theme.brand.primary, 0.1, 'true')};
 		}
 		&:after {
 			display: none !important;
@@ -127,7 +128,7 @@ const mixins = {
 		&:focus,
 		&:active {
 			background-color: ${(props) =>
-				hexa(props.theme.brand.primary, 0.1, true)};
+				hexa(props.theme.brand.primary, 0.1, 'true')};
 		}
 		&:after {
 			display: none !important;

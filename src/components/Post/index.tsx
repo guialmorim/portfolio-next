@@ -22,8 +22,9 @@ const Post: FC<IProps> = ({ post }) => {
 			<LeftContainer>
 				<p className="featured">
 					<IconFeatured />
-					{`Featured on ${capitalize(post.provider)}`}
+					{`${post.featured ? 'Participação' : 'Projeto Próprio'}`}
 				</p>
+
 				<p className="date">{formatPostDate(post.created)}</p>
 				<a className="title" href={post.url} target="_blank" rel="noreferrer">
 					{post.title}

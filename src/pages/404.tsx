@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import { prop } from 'styled-tools';
-import { IS_PORTFOLIO } from '@/src/lib/constants';
 
 const StyledMainContainer = styled.main`
 	${({ theme }) => theme.mixins.flexCenter};

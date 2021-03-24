@@ -4,8 +4,7 @@ export const StyledRepo = styled.div`
 	margin-bottom: 2%;
 	cursor: default;
 	position: relative;
-	transition: ${(props) => props.theme.transitions.default};
-	z-index: -1;
+	z-index: 10;
 
 	@media (max-width: ${(props) => props.theme.breakpoints.sm}) {
 		margin-bottom: 5%;
@@ -23,7 +22,6 @@ export const StyledRepo = styled.div`
 		transition: all 0.25s ease;
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 		transition: all 200ms ease-in-out;
-
 		&:hover {
 			opacity: 0.7;
 			transform: scale(1.03);

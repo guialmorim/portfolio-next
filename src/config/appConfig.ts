@@ -15,7 +15,7 @@ export const appConfig: AppConfig = {
 		email: 'gui.almorim@gmail.com',
 		username: 'guialmorim',
 		avatar: 'avatar.png',
-		favicon: '',
+		favicon: `${MAIN_SITE_URL}/favicon.ico`,
 		ga: '',
 		bio: `Tenho 22 anos, sou desenvolvedor de softwares e
 			soluções de automação com experiência em
@@ -37,7 +37,19 @@ export const appConfig: AppConfig = {
 				id: '2',
 				featured: true,
 				provider: '',
-				title: 'alo',
+				title: 'Vivo Money',
+				description:
+					'Desenvolvimento de uma API para tratamento anti-fraude das propostas de empréstimo recebidas pelo Vivo Money.',
+				cover:
+					'https://cdn.britannica.com/s:575x450/02/152302-004-4F261C52.jpg',
+				created: '2020-03-20',
+				url: 'https://www.vivomoney.com.br',
+			},
+			{
+				id: '3',
+				featured: false,
+				provider: '',
+				title: 'Next Store',
 				description:
 					'Um e-commerce completo usando Next.js, Typescript, MongoDB, Chakra-UI e Styled Components para estilização, projetado com simplicidade para aprendizado e uma aplicabilidade no mundo real em mente.',
 				cover:
@@ -46,15 +58,17 @@ export const appConfig: AppConfig = {
 				url: 'https://next-store.vercel.app',
 			},
 			{
-				id: '3',
-				featured: true,
+				id: '4',
+				featured: false,
 				provider: '',
-				title: 'som',
-				description: 'sadsadasd',
+				title: 'Cardapio Web App',
+				description:
+					'Desenvolvimento de um cardapio em forma de aplicação web, com a possibilidade de visualizar os modelos 3D dos pratos, mas uma imagem vale mais que mil palvras, então clica no link aqui abaixo e da uma olhada!',
 				cover:
 					'https://cdn.britannica.com/s:575x450/02/152302-004-4F261C52.jpg',
 				created: '2020-03-20',
-				url: '#',
+				url:
+					'https://vercel.com/guialmorim/cardapio/93qGXhirSJRLg7xvzUp7fht46Mt4',
 			},
 		],
 		readme: '',
@@ -105,6 +119,7 @@ export const getHeadData = (user: User) => {
 		description: `Meu nome é Guilherme Almorim, sou desenvolvedor de softwares e
 			soluções de automação com experiência em
 			projeto, codificação e teste de sistemas complexos.`,
+		keywords: '',
 	};
 	if (!isEmpty(user)) {
 		const userImage = user.avatar;

@@ -9,7 +9,7 @@ export const StyledHeader = styled.header`
 	padding: 0px 50px;
 	width: 100%;
 	height: ${NAV_HEIGHT}px;
-	background-color: ${(props) => props.theme.bg.default};
+	background-color: ${(props) => props.theme.bg.bgProjects};
 	filter: none;
 	pointer-events: auto;
 	user-select: auto;

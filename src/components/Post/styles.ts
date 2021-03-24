@@ -46,10 +46,13 @@ export const LeftContainer = styled.div`
 	}
 	.title {
 		cursor: pointer;
+		color: ${(props) => props.theme.text.default};
 		font-size: ${(props) => props.theme.fontSize.xxl};
 		font-weight: ${(props) => props.theme.fontw.semibold};
 	}
 	.description {
+		color: ${(props) => props.theme.text.default};
+
 		font-size: ${(props) => props.theme.fontSize.lg};
 	}
 	.insights {

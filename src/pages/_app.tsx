@@ -28,7 +28,7 @@ const ThemeSwitch: any = dynamic(
 );
 
 export default function App({ Component, pageProps }: AppProps) {
-	const [theme, setTheme] = usePersistedState<string>('gui.dev-theme', 'light');
+	const [theme, setTheme] = usePersistedState('gui.dev-theme', 'dark');
 
 	const toggleTheme = () => {
 		setTheme(theme === 'light' ? darkTheme.title : lightTheme.title);
