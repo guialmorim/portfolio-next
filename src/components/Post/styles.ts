@@ -63,6 +63,7 @@ export const LeftContainer = styled.div`
 	.comments {
 		font-family: ${(props) => props.theme.fontFamily.fontMono};
 		display: flex;
+		align-items: center;
 		p {
 			margin: 0 1rem;
 		}

@@ -22,22 +22,19 @@ const Repo: FC<IProps> = ({ repo }) => {
 							<AiOutlineFolderOpen />
 						</div>
 						<div className="project-links">
-							<a onClick={() => {}} aria-label="GitHub Link">
+							<a aria-label="GitHub Link" href={repo.html_url}>
 								<Icon name="github" />
 							</a>
 
-							{/* <a
-								onClick={() => onLinkClicked(homepage)}
-								aria-label="External Link"
-							>
+							<a aria-label="External Link" href={repo.html_url}>
 								<Icon name="external" />
-							</a> */}
+							</a>
 						</div>
 					</div>
 					<a
-						onClick={() => {}}
 						className="project-title"
 						aria-label="Project Link"
+						href={repo.html_url}
 					>
 						{repo.name}
 					</a>

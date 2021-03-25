@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const ScrollTop = styled.div`
-	width: 40px;
+	width: 45px;
+	height: 45px;
 	right: 5%;
 	position: fixed;
-	height: 40px;
 	bottom: 20px;
 	align-items: end;
 	justify-content: end;

@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
-import styled, { css } from 'styled-components';
-import { prop, ifProp } from 'styled-tools';
+import styled from 'styled-components';
 
 export const StyledProjectsSection = styled.section`
 	display: flex;
@@ -24,6 +23,11 @@ export const StyledProjectsSection = styled.section`
 		svg {
 			margin-right: 1rem;
 		}
+	}
+	.email-link {
+		${({ theme }) => theme.mixins.bigButton};
+		font-size: ${(props) => props.theme.fontSize.sm};
+		margin-top: 50px;
 	}
 `;
 

@@ -89,9 +89,9 @@ export const StyledMadeWith = styled.div`
 export const StyledCredit = styled.div`
 	color: ${(props) => props.theme.text.accent};
 	font-family: ${(props) => props.theme.fontFamily.fontMono};
-	font-size: ${(props) => props.theme.fontSize.xxs};
-	font-size: ${(props) => props.theme.fontSize.md};
 	line-height: 1;
+	font-size: ${(props) => props.theme.fontSize.md};
+
 	a,
 	.copyright {
 		display: flex;
@@ -103,7 +103,7 @@ export const StyledCredit = styled.div`
 	a {
 		cursor: pointer;
 		fill: ${(props) => props.theme.text.accent};
-
+		font-size: ${(props) => props.theme.fontSize.sm};
 		transition: ${(props) => props.theme.transitions.default};
 		&:hover {
 			color: ${(props) => props.theme.brand.primary};
@@ -111,5 +111,7 @@ export const StyledCredit = styled.div`
 	}
 	img {
 		max-width: 80px;
+	}
+	&:not(:first-child) {
 	}
 `;

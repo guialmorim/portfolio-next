@@ -1,10 +1,8 @@
-import { FC, ReactNode, useEffect, useState } from 'react';
+import { FC, ReactNode } from 'react';
 import { NumberedHeading } from '@/src/common/styles';
 import ReactMarkdownWithHtml from 'react-markdown/with-html';
-import fetch from 'isomorphic-unfetch';
 import { StyledAboutSection, StyledMarkdown, Container } from './styles';
 import { User } from '@/src/models/User';
-import { withTheme } from 'styled-components';
 
 interface IProps {
 	children?: ReactNode;
@@ -13,7 +11,7 @@ interface IProps {
 
 const About: FC<IProps> = ({ user }) => {
 	return (
-		<StyledAboutSection id="about">
+		<StyledAboutSection id="sobre">
 			<NumberedHeading>{'sobreMim()'}</NumberedHeading>
 			<Container>
 				<StyledMarkdown>

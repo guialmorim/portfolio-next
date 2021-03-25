@@ -3,6 +3,8 @@ import { useState, useEffect, useRef, ReactNode, FC } from 'react';
 import { useOnClickOutside } from '@/src/hooks';
 import { StyledMenu, StyledHamburgerButton, StyledSidebar } from './styles';
 import { Link } from '@/src/models/Link';
+import Scroll from 'react-scroll';
+const ScrollLink = Scroll.Link;
 
 interface IProps {
 	children?: ReactNode;
@@ -48,7 +50,15 @@ const Menu: FC<IProps> = ({ navLinks }) => {
 							<ol>
 								{navLinks.map((link, index) => (
 									<li key={index}>
-										<a onClick={(e) => {}}>{link.value}</a>
+										<ScrollLink
+											to={`${link.key}`}
+											spy={true}
+											smooth={true}
+											duration={500}
+											onClick={toggleMenu}
+										>
+											{link.value}
+										</ScrollLink>
 									</li>
 								))}
 							</ol>

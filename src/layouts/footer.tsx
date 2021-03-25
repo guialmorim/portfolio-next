@@ -20,16 +20,16 @@ const Footer: FC<IProps> = ({ user }) => {
 						{`por ${user.name}`}
 					</span>
 				</span>
-				<StyledCredit>
-					<a rel="noreferrer" target="_blank" href="https://jrgarciadev.com">
-						<span>Inspirado por Junior García</span>
-					</a>
-				</StyledCredit>
-				<StyledCredit>
-					<a rel="noreferrer" target="_blank" href="https://vercel.com">
-						<span>Hospedado por Vercel</span>
-					</a>
-				</StyledCredit>
+			</StyledCredit>
+			<StyledCredit>
+				<a rel="noreferrer" target="_blank" href="https://devcover.me">
+					<span>Inspirado por Devcover</span>
+				</a>
+			</StyledCredit>
+			<StyledCredit>
+				<a rel="noreferrer" target="_blank" href="https://vercel.com">
+					<span>Hospedado por Vercel</span>
+				</a>
 			</StyledCredit>
 		</StyledFooter>
 	);

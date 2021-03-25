@@ -11,6 +11,8 @@ import Terminal from '@/src/components/Terminal';
 import Typed from 'react-typed';
 import { User } from '@/src/models/User';
 import { AiOutlineArrowDown } from 'react-icons/ai';
+import Scroll from 'react-scroll';
+const ScrollLink = Scroll.Link;
 
 interface IProps {
 	children?: ReactNode;
@@ -36,10 +38,11 @@ const Hero: FC<IProps> = ({ user, typedWordArray }) => {
 					</Typed>
 				</Terminal>
 				<p>{user.bio}</p>
-
-				<a href={`mailto:${user.email}`} className="email-link">
-					Conheça um pouco mais sobre mim <AiOutlineArrowDown />
-				</a>
+				<ScrollLink to="sobre" spy={true} smooth={true} duration={500}>
+					<a href={`mailto:${user.email}`} className="email-link">
+						Conheça um pouco mais sobre mim <AiOutlineArrowDown />
+					</a>
+				</ScrollLink>
 			</LeftContainer>
 			<RightContainer>
 				<StyledPic>

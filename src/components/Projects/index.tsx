@@ -5,6 +5,7 @@ import { NumberedHeading } from '@/src/common/styles';
 import { Repo } from '@/src/components';
 import { StyledProjectsSection, StyledGrid } from './styles';
 import { User } from '@/src/models/User';
+import { FiExternalLink } from 'react-icons/fi';
 
 interface IProps {
 	children?: ReactNode;
@@ -13,7 +14,7 @@ interface IProps {
 
 const Projects: FC<IProps> = ({ user }) => {
 	return (
-		<StyledProjectsSection id="projects">
+		<StyledProjectsSection id="github">
 			<NumberedHeading>{'github()'}</NumberedHeading>
 			<StyledGrid>
 				{user.repos.length > 0 &&
@@ -21,6 +22,14 @@ const Projects: FC<IProps> = ({ user }) => {
 						return <Repo key={repo.id} repo={repo} />;
 					})}
 			</StyledGrid>
+			<a
+				className="email-link"
+				target="_blank"
+				href={`https://github.com/${user.username}?tab=repositories`}
+			>
+				Veja todos os meus repositorios&nbsp;
+				<FiExternalLink />
+			</a>
 		</StyledProjectsSection>
 	);
 };

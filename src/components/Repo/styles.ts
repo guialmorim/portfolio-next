@@ -4,7 +4,6 @@ export const StyledRepo = styled.div`
 	margin-bottom: 2%;
 	cursor: default;
 	position: relative;
-	z-index: 10;
 
 	@media (max-width: ${(props) => props.theme.breakpoints.sm}) {
 		margin-bottom: 5%;

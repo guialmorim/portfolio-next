@@ -60,6 +60,7 @@ export const LeftContainer = styled.div`
 
 	.email-link {
 		${({ theme }) => theme.mixins.bigButton};
+		font-size: ${(props) => props.theme.fontSize.md};
 	}
 `;
 

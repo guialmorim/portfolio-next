@@ -104,10 +104,7 @@ export default createGlobalStyle`
 
     &.blur {
       overflow: hidden;
-
-      header {
-        background-color: transparent;
-      }
+      z-index: 10;
 
       #content > * {
         filter: blur(5px) brightness(0.7);
@@ -116,7 +113,6 @@ export default createGlobalStyle`
         user-select: none;
       }
     }
-
   }
 
   #root {

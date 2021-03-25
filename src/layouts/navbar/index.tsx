@@ -7,6 +7,8 @@ import {
 	StyledHeaderBottom,
 } from './styles';
 import { Link } from '@/src/models/Link';
+import Scroll from 'react-scroll';
+const ScrollLink = Scroll.Link;
 
 interface IProps {
 	children?: ReactNode;
@@ -28,9 +30,14 @@ const Nav: FC<IProps> = ({ navLinks }) => {
 							{navLinks.length > 0 &&
 								navLinks.map((link, i) => (
 									<li key={i}>
-										<a data-scroll target="_blank" href={`#${link.key}`}>
+										<ScrollLink
+											to={`${link.key}`}
+											spy={true}
+											smooth={true}
+											duration={500}
+										>
 											{link.value}
-										</a>
+										</ScrollLink>
 									</li>
 								))}
 						</ol>

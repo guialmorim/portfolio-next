@@ -5,7 +5,7 @@ export const StyledHeader = styled.header`
 	${({ theme }) => theme.mixins.flexBetween};
 	position: fixed;
 	top: 0;
-	z-index: 11;
+	z-index: 1000;
 	padding: 0px 50px;
 	width: 100%;
 	height: ${NAV_HEIGHT}px;
@@ -30,7 +30,7 @@ export const StyledHeaderBottom = styled.header`
 	z-index: 10;
 	padding: 0px 50px;
 	width: 100%;
-	height: 4px;
+	height: 5px;
 	pointer-events: none !important;
 	user-select: none !important;
 	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);

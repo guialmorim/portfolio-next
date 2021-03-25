@@ -28,8 +28,7 @@ export const appConfig: AppConfig = {
 				title: 'Purina 28 Dias',
 				description:
 					'Criação de uma experiência web para os clientes da Nestlé Purina PetCare® com conteúdo dividido em dois ambientes, um mini game com um ciclo de 28 dias e uma aplicação em React Js para controlar as metas e cuidados com o seu pet. Podendo também acessar conteúdos especiais para os pets, dicas exclusivas, benefícios de Purina One e informações de cuidados entre outros.',
-				cover:
-					'https://cdn.britannica.com/s:575x450/02/152302-004-4F261C52.jpg',
+				cover: '/portfolio/purina.png',
 				created: '2020-03-20',
 				url: 'https://www.purinaone28dias.com.br/homepage',
 			},
@@ -40,8 +39,7 @@ export const appConfig: AppConfig = {
 				title: 'Vivo Money',
 				description:
 					'Desenvolvimento de uma API para tratamento anti-fraude das propostas de empréstimo recebidas pelo Vivo Money.',
-				cover:
-					'https://cdn.britannica.com/s:575x450/02/152302-004-4F261C52.jpg',
+				cover: '/portfolio/vivomoney.png',
 				created: '2020-03-20',
 				url: 'https://www.vivomoney.com.br',
 			},
@@ -64,11 +62,9 @@ export const appConfig: AppConfig = {
 				title: 'Cardapio Web App',
 				description:
 					'Desenvolvimento de um cardapio em forma de aplicação web, com a possibilidade de visualizar os modelos 3D dos pratos, mas uma imagem vale mais que mil palvras, então clica no link aqui abaixo e da uma olhada!',
-				cover:
-					'https://cdn.britannica.com/s:575x450/02/152302-004-4F261C52.jpg',
+				cover: '/portfolio/cardapio.png',
 				created: '2020-03-20',
-				url:
-					'https://vercel.com/guialmorim/cardapio/93qGXhirSJRLg7xvzUp7fht46Mt4',
+				url: 'https://cardapio-six.vercel.app',
 			},
 		],
 		readme: '',

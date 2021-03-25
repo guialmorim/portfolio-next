@@ -6,7 +6,6 @@ export const Container = styled.div`
 	height: 45px;
 	top: 120px;
 	left: 30px;
-	opacity: 0.5;
 	font-size: 2rem;
 	font-family: 'Roboto Mono', monospace !important;
 	font-weight: 400 !important;
@@ -23,6 +22,6 @@ export const Container = styled.div`
 	}
 
 	&:hover {
-		opacity: 1;
+		opacity: 0.5;
 	}
 `;

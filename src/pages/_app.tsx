@@ -10,6 +10,7 @@ import { darkTheme, lightTheme } from '@/src/themes';
 import { ThemeProvider } from 'styled-components';
 import { appConfig } from '@/src/config/appConfig';
 import usePersistedState from '../hooks/use-persisted-state';
+import Navbar from '@/src/layouts/navbar';
 // Notice how we track pageview when route is changed
 Router.events.on('routeChangeComplete', (url) => gtag.pageview(url));
 
@@ -32,7 +33,6 @@ export default function App({ Component, pageProps }: AppProps) {
 
 	const toggleTheme = () => {
 		setTheme(theme === 'light' ? darkTheme.title : lightTheme.title);
-		console.log('tema trocado para', theme);
 	};
 
 	const selectedTheme = theme === 'dark' ? darkTheme : lightTheme;
